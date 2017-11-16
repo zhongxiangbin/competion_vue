@@ -5,9 +5,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
+import VueLazyload from 'vue-lazyload'
 
 import 'common/stylus/index.styl'
 
+Vue.use(VueLazyload, {
+  preload: 1.3,
+  error: require('common/image/default.png'),
+  loading: require('common/image/default.png'),
+  attempt: 1
+})
 Vue.config.productionTip = false
 
 fastclick.attach(document.body)
@@ -16,5 +23,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: {App}
 })
