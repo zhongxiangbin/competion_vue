@@ -147,7 +147,7 @@
           return
         }
         this.fixedTop = fixedTop
-        this.$refs.fixed.style.transform = `translate3d(0,${fixedTop},0)`
+        this.$refs.fixed.style.transform = `translate3d(0,${fixedTop}px,0)`
       }
     },
     components: {
