@@ -1,6 +1,6 @@
 # competion
 
-> 解题大赛
+> vue-music
 
 ## Build Setup
 
