@@ -1,4 +1,4 @@
-# competion
+# VueMusic
 
 > vue-music
 
