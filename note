@@ -1,0 +1,15 @@
+vuex使用
+store ---状态
+  index.js ---vuex入口
+  state.js ---vuex的状态列表（定义需要的状态）
+  mutations.js ---通过mutations修改state中的状态
+  mutation-type.js --- 声明管理mutations的变量类型
+  getters.js ---获取修改state中的状态
+  actions.js --异步修改state中的状态
+
+整体流程：
+  view需求 --> 通过actions异步修改了数据 --> mutation修改state中的状态
+  --> getter从sate中拿取变化后的状态 --> getter得到新的状态渲染到view
+
+优点：
+  管理共享状态
